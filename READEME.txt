@@ -1,0 +1,19 @@
+# require
+- pytorch
+- dlib
+- opencv
+
+# data
+- Model dlib: http://dlib.net/files/mmod_human_face_detector.dat.bz2
+- Snapshot hopenet: https://github.com/natanielruiz/deep-head-pose
+
+# run
+python3 main.py --mdlib <path_to_dlib_model_face_detector> 
+                --mhopenet <path_to_hopenet_snapshot> 
+                --i <path_to_folder_image_test>
+ex:
+python3 main.py --mdlib dlib_model/mmod_human_face_detector.dat 
+                --mhopenet hopenet_model/hopenet_alpha1.pkl
+                --i /home/vsmart/Pictures/face
+
+
